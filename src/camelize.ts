@@ -51,4 +51,14 @@ function camelCaseRequest(
     next();
 }
 
+
+/**
+ * Express middleware to convert the request body from snake_case to camelCase
+ *
+ * This only works if the body has been parsed before (for example by express.json())
+ *
+ * @param request Express request
+ * @param res Express response
+ * @param next next function
+ */
 export const camelCaseMiddleware: RequestHandler = camelCaseRequest;
