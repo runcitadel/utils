@@ -110,7 +110,7 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
     prettier: ^2.3.2
-    typedoc: ^0.21.3
+    typedoc: ^0.21.4
     typescript: ^4.3.5
     validator: ^13.6.0
   languageName: unknown
@@ -1559,9 +1559,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.21.3":
-  version: 0.21.3
-  resolution: "typedoc@npm:0.21.3"
+"typedoc@npm:^0.21.4":
+  version: 0.21.4
+  resolution: "typedoc@npm:0.21.4"
   dependencies:
     glob: ^7.1.7
     handlebars: ^4.7.7
@@ -1575,7 +1575,7 @@ __metadata:
     typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x
   bin:
     typedoc: bin/typedoc
-  checksum: 21d1034539b5b5cb7f944575f2f0d358b9e57b98b6571303801f45809ecec45f480f3c5aaf36b58660b6be5513596d6e0491641f3143eda1812eede8cedca7fb
+  checksum: 16bbbfbe1e858c006c5bdc86be8052c9db3be5f95dda7c720e1d2b78a6dc233798d442b0fbfcdb7f6d9e5d0cd41bc9038035c16a83d8880fb042891dbdf0c5f2
   languageName: node
   linkType: hard
 

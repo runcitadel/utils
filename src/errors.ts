@@ -94,4 +94,13 @@ export function handleError(
     return next();
 }
 
-export default <ErrorRequestHandler>handleError;
+/**
+ * Express error handler to make sure errors a logged and return the right status code
+ *
+ * @param err The error
+ * @param req The expres request
+ * @param res The express response
+ * @param next The next function
+ * @returns Nothing
+ */
+export const errorHandlerMiddleware = <ErrorRequestHandler>handleError;

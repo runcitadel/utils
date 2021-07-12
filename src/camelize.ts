@@ -12,7 +12,6 @@ function camelizeString(s: string): string {
     });
 }
 
-
 /**
  * Recursively converts an object or string to camelCase
  *
@@ -56,7 +55,6 @@ function camelCaseRequest(
 
     next();
 }
-
 
 /**
  * Express middleware to convert the request body from snake_case to camelCase

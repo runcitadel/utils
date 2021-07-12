@@ -4,6 +4,7 @@ import type { Request, Response, NextFunction, RequestHandler } from "express";
  * This safe handler is used to wrap our api method
  * so that we always fallback and return an exception
  * if there is an error inside of an async function
+ *
  * @param handler The handler function to run safely
  * @returns The handler function wrapped safely
  */

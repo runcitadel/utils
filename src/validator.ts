@@ -9,6 +9,7 @@ const MIN_PASSWORD_LENGTH = 12;
 
 /**
  * Checks if a string only contains alpha numeric characters
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string to check
  */
@@ -24,6 +25,7 @@ export function isAlphanumeric(string: string): void {
 
 /**
  * Checks if a string only contains alpha numeric characters and spaces
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string to check
  */
@@ -39,6 +41,7 @@ export function isAlphanumericAndSpaces(string: string): void {
 
 /**
  * Checks if a value has a boolean type
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param value The value to check
  */
@@ -50,6 +53,7 @@ export function isBoolean(value: unknown): void {
 
 /**
  * Checks if a string represents a decimal number
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string to check
  */
@@ -72,6 +76,7 @@ export function isDefined(value: unknown): void {
 
 /**
  * Checks if a string is long enough for a password
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string to check
  */
@@ -84,7 +89,8 @@ export function isMinPasswordLength(password: string): void {
 }
 
 /**
- * Checks if a string or number is a positive interger
+ * Checks if a string or number is a positive integer
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string or number to check
  */
@@ -95,7 +101,8 @@ export function isPositiveInteger(amount: string | number): void {
 }
 
 /**
- * Checks if a string or number is a positive interger or zero
+ * Checks if a string or number is a positive integer or zero
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string or number to check
  */
@@ -107,6 +114,7 @@ export function isPositiveIntegerOrZero(amount: unknown): void {
 
 /**
  * Checks if a value is a string
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param value The object to check
  */
@@ -118,6 +126,7 @@ export function isString(value: unknown): void {
 
 /**
  * Checks if a string has a valid length for a memo
+ * Throws a {@link ValidationError} error if condtion is not met
  *
  * @param string The string to check
  */
