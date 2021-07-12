@@ -12,7 +12,13 @@ function camelizeString(s: string): string {
     });
 }
 
-// eslint-disable-next-line @typescript-eslint/ban-types
+
+/**
+ * Recursively converts an object or string to camelCase
+ *
+ * @param object The object or string to convert
+ * @returns The converted string or object
+ */
 export function camelize(
     object: Record<string, unknown> | string
 ): string | Record<string, unknown> {
