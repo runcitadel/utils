@@ -89,17 +89,8 @@
 								<li class="tsd-kind-function"><a href="modules.html#camelCaseMiddleware" class="tsd-kind-icon">camel<wbr>Case<wbr>Middleware</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#camelize" class="tsd-kind-icon">camelize</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#convert" class="tsd-kind-icon">convert</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#errorHandlerMiddleware" class="tsd-kind-icon">error<wbr>Handler<wbr>Middleware</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#handleError" class="tsd-kind-icon">handle<wbr>Error</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isAlphanumeric" class="tsd-kind-icon">is<wbr>Alphanumeric</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isAlphanumericAndSpaces" class="tsd-kind-icon">is<wbr>Alphanumeric<wbr>And<wbr>Spaces</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isDecimal" class="tsd-kind-icon">is<wbr>Decimal</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isDefined" class="tsd-kind-icon">is<wbr>Defined</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isMinPasswordLength" class="tsd-kind-icon">is<wbr>Min<wbr>Password<wbr>Length</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isPositiveInteger" class="tsd-kind-icon">is<wbr>Positive<wbr>Integer</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isPositiveIntegerOrZero" class="tsd-kind-icon">is<wbr>Positive<wbr>Integer<wbr>OrZero</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isString" class="tsd-kind-icon">is<wbr>String</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#isValidMemoLength" class="tsd-kind-icon">is<wbr>Valid<wbr>Memo<wbr>Length</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#safeHandler" class="tsd-kind-icon">safe<wbr>Handler</a></li>
 							</ul>
 						</section>
@@ -114,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Custom<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="classes/NodeError.html" class="tsd-signature-type" data-tsd-kind="Class">NodeError</a><span class="tsd-signature-symbol"> | </span><a href="classes/ValidationError.html" class="tsd-signature-type" data-tsd-kind="Class">ValidationError</a><span class="tsd-signature-symbol"> | </span><a href="classes/LndError.html" class="tsd-signature-type" data-tsd-kind="Class">LndError</a><span class="tsd-signature-symbol"> | </span><a href="classes/BitcoindError.html" class="tsd-signature-type" data-tsd-kind="Class">BitcoindError</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/errors.ts#L64">src/errors.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/errors.ts#L64">src/errors.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/camelize.ts#L70">src/camelize.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/camelize.ts#L68">src/camelize.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/camelize.ts#L22">src/camelize.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/camelize.ts#L21">src/camelize.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,7 +195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/convert.ts#L22">src/convert.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/convert.ts#L22">src/convert.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,6 +236,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="errorHandlerMiddleware" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> error<wbr>Handler<wbr>Middleware</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">error<wbr>Handler<wbr>Middleware<span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NextFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/errors.ts#L106">src/errors.ts:106</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Express error handler to make sure errors a logged and return the right status code</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>err: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The error</p>
+									</div>
+								</li>
+								<li>
+									<h5>req: <span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The expres request</p>
+									</div>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The express response</p>
+									</div>
+								</li>
+								<li>
+									<h5>next: <span class="tsd-signature-type">NextFunction</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The next function</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>Nothing</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="handleError" class="tsd-anchor"></a>
 					<h3>handle<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -254,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/errors.ts#L79">src/errors.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/errors.ts#L79">src/errors.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -295,307 +336,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isAlphanumeric" class="tsd-anchor"></a>
-					<h3>is<wbr>Alphanumeric</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Alphanumeric<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L15">src/validator.ts:15</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string only contains alpha numeric characters</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>string: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isAlphanumericAndSpaces" class="tsd-anchor"></a>
-					<h3>is<wbr>Alphanumeric<wbr>And<wbr>Spaces</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Alphanumeric<wbr>And<wbr>Spaces<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L30">src/validator.ts:30</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string only contains alpha numeric characters and spaces</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>string: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isBoolean" class="tsd-anchor"></a>
-					<h3>is<wbr>Boolean</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Boolean<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L45">src/validator.ts:45</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a value has a boolean type</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">unknown</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isDecimal" class="tsd-anchor"></a>
-					<h3>is<wbr>Decimal</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Decimal<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L56">src/validator.ts:56</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string represents a decimal number</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>string: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isDefined" class="tsd-anchor"></a>
-					<h3>is<wbr>Defined</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Defined<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L67">src/validator.ts:67</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if something is defined</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">unknown</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The thing to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isMinPasswordLength" class="tsd-anchor"></a>
-					<h3>is<wbr>Min<wbr>Password<wbr>Length</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Min<wbr>Password<wbr>Length<span class="tsd-signature-symbol">(</span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L78">src/validator.ts:78</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string is long enough for a password</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>password: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isPositiveInteger" class="tsd-anchor"></a>
-					<h3>is<wbr>Positive<wbr>Integer</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Positive<wbr>Integer<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L91">src/validator.ts:91</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string or number is a positive interger</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>amount: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isPositiveIntegerOrZero" class="tsd-anchor"></a>
-					<h3>is<wbr>Positive<wbr>Integer<wbr>OrZero</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Positive<wbr>Integer<wbr>OrZero<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L102">src/validator.ts:102</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string or number is a positive interger or zero</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>amount: <span class="tsd-signature-type">unknown</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isString" class="tsd-anchor"></a>
-					<h3>is<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>String<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L113">src/validator.ts:113</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a value is a string</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">unknown</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The object to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="isValidMemoLength" class="tsd-anchor"></a>
-					<h3>is<wbr>Valid<wbr>Memo<wbr>Length</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Memo<wbr>Length<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/validator.ts#L124">src/validator.ts:124</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks if a string has a valid length for a memo</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>string: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to check</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="safeHandler" class="tsd-anchor"></a>
 					<h3>safe<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -605,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/f8a1aed/src/safeHandler.ts#L10">src/safeHandler.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/d5a98ca/src/safeHandler.ts#L11">src/safeHandler.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -696,37 +436,10 @@
 						<a href="modules.html#convert" class="tsd-kind-icon">convert</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#errorHandlerMiddleware" class="tsd-kind-icon">error<wbr>Handler<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#handleError" class="tsd-kind-icon">handle<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isAlphanumeric" class="tsd-kind-icon">is<wbr>Alphanumeric</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isAlphanumericAndSpaces" class="tsd-kind-icon">is<wbr>Alphanumeric<wbr>And<wbr>Spaces</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isDecimal" class="tsd-kind-icon">is<wbr>Decimal</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isDefined" class="tsd-kind-icon">is<wbr>Defined</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isMinPasswordLength" class="tsd-kind-icon">is<wbr>Min<wbr>Password<wbr>Length</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isPositiveInteger" class="tsd-kind-icon">is<wbr>Positive<wbr>Integer</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isPositiveIntegerOrZero" class="tsd-kind-icon">is<wbr>Positive<wbr>Integer<wbr>OrZero</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isString" class="tsd-kind-icon">is<wbr>String</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isValidMemoLength" class="tsd-kind-icon">is<wbr>Valid<wbr>Memo<wbr>Length</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#safeHandler" class="tsd-kind-icon">safe<wbr>Handler</a>
