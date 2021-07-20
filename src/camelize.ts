@@ -41,16 +41,16 @@ export function camelize(
  * This only works if the body has been parsed before (for example by express.json())
  *
  * @param request Express request
- * @param res Express response
+ * @param _res Express response
  * @param next next function
  */
 function camelCaseRequest(
-    request: Request,
-    res: Response,
+    req: Request,
+    _res: Response,
     next: NextFunction
 ): void {
-    if (request && request.body) {
-        request.body = camelize(request.body);
+    if (req && req.body) {
+        req.body = camelize(req.body);
     }
 
     next();
@@ -61,7 +61,7 @@ function camelCaseRequest(
  *
  * This only works if the body has been parsed before (for example by express.json())
  *
- * @param request Express request
+ * @param req Express request
  * @param res Express response
  * @param next next function
  */
