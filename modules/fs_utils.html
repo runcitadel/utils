@@ -74,8 +74,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#readJsonFile" class="tsd-kind-icon">read<wbr>Json<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#readUtf8File" class="tsd-kind-icon">read<wbr>Utf8<wbr>File</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#readYamlFile" class="tsd-kind-icon">read<wbr>Yaml<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#safeWriteFile" class="tsd-kind-icon">safe<wbr>Write<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#writeJsonFile" class="tsd-kind-icon">write<wbr>Json<wbr>File</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="fs_utils.html#writeYamlFile" class="tsd-kind-icon">write<wbr>Yaml<wbr>File</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,7 +87,7 @@
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="readJsonFile" class="tsd-anchor"></a>
-					<h3>read<wbr>Json<wbr>File</h3>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> read<wbr>Json<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
 						<li class="tsd-signature tsd-kind-icon">read<wbr>Json<wbr>File<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
@@ -93,13 +95,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/5e44e76/src/fs.ts#L21">src/fs.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L34">src/fs.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Reads a JSON file into an object</p>
 								</div>
+								<p>This is just readYamlFile because JSON is a subset of YAML</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -125,7 +128,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/5e44e76/src/fs.ts#L11">src/fs.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L12">src/fs.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -148,6 +151,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="readYamlFile" class="tsd-anchor"></a>
+					<h3>read<wbr>Yaml<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Yaml<wbr>File<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L22">src/fs.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reads a YAML file into an object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the file to read</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The parsed content of the file</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="safeWriteFile" class="tsd-anchor"></a>
 					<h3>safe<wbr>Write<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
@@ -157,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/5e44e76/src/fs.ts#L31">src/fs.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L42">src/fs.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,12 +229,49 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/5e44e76/src/fs.ts#L54">src/fs.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L65">src/fs.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Encodes data to JSON and writes it into a file</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the file to write</p>
+									</div>
+								</li>
+								<li>
+									<h5>obj: <span class="tsd-signature-type">unknown</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to be written into the file (as an object)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="writeYamlFile" class="tsd-anchor"></a>
+					<h3>write<wbr>Yaml<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">write<wbr>Yaml<wbr>File<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/runcitadel/utils/blob/ac6e7a8/src/fs.ts#L78">src/fs.ts:78</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Encodes data to YAML and writes it into a file</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -249,10 +321,16 @@
 						<a href="fs_utils.html#readUtf8File" class="tsd-kind-icon">read<wbr>Utf8<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="fs_utils.html#readYamlFile" class="tsd-kind-icon">read<wbr>Yaml<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="fs_utils.html#safeWriteFile" class="tsd-kind-icon">safe<wbr>Write<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="fs_utils.html#writeJsonFile" class="tsd-kind-icon">write<wbr>Json<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="fs_utils.html#writeYamlFile" class="tsd-kind-icon">write<wbr>Yaml<wbr>File</a>
 					</li>
 				</ul>
 			</nav>
