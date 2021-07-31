@@ -8,7 +8,9 @@
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
         "moduleResolution": "node",
-        "outDir": "lib"
+        "outDir": "lib",
+        "incremental": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "typeAcquisition": { "include": ["jest"] }
 }

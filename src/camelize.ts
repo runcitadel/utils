@@ -19,14 +19,18 @@ function camelizeString(s: string): string {
  * @returns The converted string or object
  */
 export function camelize(
-    object: Record<string, unknown> | string
-): string | Record<string, unknown> {
+    object: Record<string, unknown> | string | unknown
+): string | Record<string, unknown> | unknown {
     if (typeof object === "string") return camelizeString(object);
+    // If object is an array, recursively convert each element
+    if (Array.isArray(object)) {
+        return object.map((element) => camelize(element));
+    }
     if (typeof object !== "object") return object;
     if (typeof object === "object") {
-        return Object.entries(object).reduce(
+        return Object.entries(<Record<string, unknown>>object).reduce(
             (carry: Record<string, unknown>, [key, value]) => {
-                carry[camelizeString(key)] = value;
+                carry[camelizeString(key)] = camelize(value);
                 return carry;
             },
             {}

@@ -3,10 +3,10 @@ import Big from "big.js";
 
 const units: Record<string, Big> = {
     btc: new Big(1),
-    mBTC: new Big(0.001),
-    μBTC: new Big(0.000001),
+    mbtc: new Big(0.001),
+    μbtc: new Big(0.000001),
     bit: new Big(0.000001),
-    Satoshi: new Big(0.00000001),
+    satoshi: new Big(0.00000001),
     sat: new Big(0.00000001),
 };
 
@@ -25,12 +25,12 @@ function convert(
     toUnit: string,
     representation: "String" | "Number" | "Big"
 ): string | number | Big {
-    const fromFactor = units[fromUnit];
+    const fromFactor = units[fromUnit] || units[fromUnit.toLowerCase()];
     if (fromFactor === undefined) {
         throw new Error(`'${fromUnit}' is not a bitcoin unit`);
     }
 
-    const toFactor = units[toUnit];
+    const toFactor = units[toUnit] || units[toUnit.toLowerCase()];
     if (toFactor === undefined) {
         throw new Error(`'${toUnit}' is not a bitcoin unit`);
     }
