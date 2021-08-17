@@ -1,7 +1,7 @@
 import { convert } from ".";
 
 // Test conversion from  one unit to itself
-test("convert from one unit to itself changes nothin", () => {
+test("convert from one unit to itself changes nothing", () => {
     expect(convert(1, "btc", "btc", "Number")).toBe(1);
     expect(convert(10, "sat", "sat", "Number")).toBe(10);
 });
