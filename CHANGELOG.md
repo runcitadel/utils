@@ -2,6 +2,12 @@
 
 ## 0.x
 
+### 0.3.1
+
+-   chore: update dependencies
+-   fix: Update yarn.lock to match package.json
+-   fix(build): Disable linting on .yarnrc.yml
+
 ### 0.3.0
 
 -   feat(breaking): camelize now also camelizes object values
