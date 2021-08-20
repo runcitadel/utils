@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.4.0
+
+-   feat: Add some useful types
+
 ### 0.3.1
 
 -   chore: update dependencies
