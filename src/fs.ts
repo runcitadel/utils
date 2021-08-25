@@ -1,6 +1,6 @@
 import * as fs from "fs/promises";
 import * as crypto from "crypto";
-import * as YAML from "yaml";
+import YAML from "yaml";
 const uint32Bytes = 4;
 
 /**

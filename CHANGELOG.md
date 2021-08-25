@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.4.2
+
+- fix: Import YAML properly
+
 ### 0.4.1
 
 -   fix: Improve readYamlFile() function
