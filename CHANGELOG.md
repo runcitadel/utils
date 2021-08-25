@@ -4,7 +4,7 @@
 
 ### 0.4.2
 
-- fix: Import YAML properly
+-   fix: Import YAML properly
 
 ### 0.4.1
 
