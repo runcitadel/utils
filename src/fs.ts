@@ -20,7 +20,7 @@ export async function readUtf8File(filePath: string): Promise<string> {
  * @returns The parsed content of the file
  */
 export async function readYamlFile(filePath: string): Promise<unknown> {
-    return await readUtf8File(filePath).then(YAML.parse);
+    return YAML.parse(await readUtf8File(filePath));
 }
 
 /**

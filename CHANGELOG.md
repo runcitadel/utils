@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.4.1
+
+-   fix: Improve readYamlFile() function
+
 ### 0.4.0
 
 -   feat: Add some useful types
