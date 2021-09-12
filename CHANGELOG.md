@@ -2,6 +2,14 @@
 
 ## 0.x
 
+### 0.5.0 (unreleased)
+
+-   feat(breaking): rename fs_utils to fs
+-   feat: Add fs.touch
+-   feat: Add fs.ensureWriteFile
+-   feat: fs now also includes all builtin fs functions
+-   feat: fs.safeWriteFile now supports all tpes already supported by node's builtin fs.writeFile
+
 ### 0.4.2
 
 -   fix: Import YAML properly
