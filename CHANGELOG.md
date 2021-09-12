@@ -2,7 +2,7 @@
 
 ## 0.x
 
-### 0.5.0 (unreleased)
+### 0.5.0
 
 -   feat(breaking): rename fs_utils to fs
 -   feat: Add fs.touch
