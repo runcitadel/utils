@@ -9,6 +9,7 @@
 -   feat: Add fs.ensureWriteFile
 -   feat: fs now also includes all builtin fs functions
 -   feat: fs.safeWriteFile now supports all tpes already supported by node's builtin fs.writeFile
+-   chore: Update dependencies
 
 ### 0.4.2
 
