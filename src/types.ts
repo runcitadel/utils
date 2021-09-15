@@ -51,10 +51,15 @@ export type appQuery = {
 
 /** A user.json file on Umbrel. Some data may automatically be added and not actually in the file */
 export type user = {
+    /** The user's name */
     name: string;
+    /** The users password, hashed by bcrypt */
     password?: string;
+    /** The users password in plain text, only added at runtime, never stored in a file */
     plainTextPassword?: string;
+    /** The users mnemoic LND seed */
     seed?: string | Buffer | ArrayBuffer;
+    /** The list of IDs of installed apps */
     installedApps?: string[];
 };
 
@@ -133,5 +138,6 @@ export type backupStatus = {
 export type debugStatus = {
     status: "processing" | "success";
     debug: string;
+    /** The dmesg logs */
     dmesg: string;
 };
