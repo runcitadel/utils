@@ -2,6 +2,12 @@
 
 ## 0.x
 
+### 0.6.0
+
+-   feat: Add synchrounous versions of custom fs APIs
+-   feat(breaking): fs.readJsonFile now uses a JSON parser instead of a YAML parser
+-   feat: Export more useful stuff from the fs module
+
 ### 0.5.0
 
 -   feat(breaking): rename fs_utils to fs
