@@ -1,5 +1,8 @@
 /* Common Types used in Umbrel/Citadel */
+/** A dependency an app could have */
 type Dependency = "bitcoind" | "electrum" | "lnd";
+/** A permission which can be granted to an app */
+type Permission = Dependency | "root" | "hw"; 
 
 /**
  * Defines an app
@@ -130,7 +133,7 @@ export type versionFile = {
 };
 
 export type backupStatus = {
-    status: string;
+    status: "success" | "failed";
     /** A unix timestamp of when the backup was created */
     timestamp: number;
 };
