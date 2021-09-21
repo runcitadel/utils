@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.6.1
+
+-   Deprecate express.js methods.
+
 ### 0.6.0
 
 -   feat: Add synchrounous versions of custom fs APIs

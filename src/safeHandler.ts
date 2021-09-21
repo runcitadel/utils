@@ -6,6 +6,7 @@ import type { Request, Response, NextFunction, RequestHandler } from "express";
  * if there is an error inside of an async function
  *
  * @param handler The handler function to run safely
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
  * @returns The handler function wrapped safely
  */
 export function safeHandler(
