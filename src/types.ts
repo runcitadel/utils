@@ -1,8 +1,8 @@
-/* Common Types used in Umbrel/Citadel */
+/* Common types used in Citadel */
 /** A dependency an app could have */
-type Dependency = "bitcoind" | "electrum" | "lnd";
+export type Dependency = "bitcoind" | "electrum" | "lnd";
 /** A permission which can be granted to an app */
-type Permission = Dependency | "root" | "hw"; 
+export type Permission = Dependency | "root" | "hw";
 
 /**
  * Defines an app

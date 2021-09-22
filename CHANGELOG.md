@@ -2,6 +2,11 @@
 
 ## 0.x
 
+### 0.7.0
+
+-   Deprecate more express.js methods.
+-   fix: Export StatSyncOptions in the `fs` module.
+
 ### 0.6.1
 
 -   Deprecate express.js methods.

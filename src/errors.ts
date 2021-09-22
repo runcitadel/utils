@@ -1,10 +1,8 @@
-import type {
-    Request,
-    Response,
-    NextFunction,
-    ErrorRequestHandler,
-} from "express";
+import type { Request, Response, NextFunction } from "express";
 
+/**
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
+ */
 export class NodeError extends Error {
     statusCode?: number;
     constructor(message: string, statusCode?: number) {
@@ -16,6 +14,9 @@ export class NodeError extends Error {
     }
 }
 
+/**
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
+ */
 export class ValidationError extends Error {
     statusCode?: number;
     constructor(message: string, statusCode?: number) {
@@ -27,6 +28,9 @@ export class ValidationError extends Error {
     }
 }
 
+/**
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
+ */
 export class BitcoindError extends Error {
     statusCode?: number;
     error: unknown = undefined;
@@ -44,6 +48,9 @@ export class BitcoindError extends Error {
     }
 }
 
+/**
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
+ */
 export class LndError extends Error {
     statusCode?: number;
     error: unknown = undefined;
@@ -61,6 +68,9 @@ export class LndError extends Error {
     }
 }
 
+/**
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
+ */
 export type CustomError =
     | NodeError
     | ValidationError
@@ -74,9 +84,10 @@ export type CustomError =
  * @param req The expres request
  * @param res The express response
  * @param next The next function
+ * @deprecated This was only used for express.js, we're migrating to Koa now.
  * @returns Nothing
  */
-export function handleError(
+export function errorHandlerMiddleware(
     err: Error,
     req: Request,
     res: Response,
@@ -93,14 +104,3 @@ export function handleError(
 
     return next();
 }
-
-/**
- * Express error handler to make sure errors a logged and return the right status code
- *
- * @param err The error
- * @param req The expres request
- * @param res The express response
- * @param next The next function
- * @returns Nothing
- */
-export const errorHandlerMiddleware = <ErrorRequestHandler>handleError;

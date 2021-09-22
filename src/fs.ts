@@ -320,6 +320,7 @@ export {
     RmOptions,
     StatOptions,
     StatSyncFn,
+    StatSyncOptions,
     Stats,
     StatsBase,
     TimeLike,
