@@ -1,14 +1,14 @@
 {
-    "search.exclude": {
-        "**/.yarn": true,
-        "**/.pnp.*": true
-    },
-    "typescript.tsdk": ".yarn/sdks/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "files.watcherExclude": {
-        "**/.yarn/cache": true,
-        "**/.yarn/unplugged": true
-    },
-    "eslint.nodePath": ".yarn/sdks",
-    "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.watcherExclude": {
+    "**/.yarn/cache": true,
+    "**/.yarn/unplugged": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
 }

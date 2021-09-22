@@ -3,3 +3,5 @@ docs
 .pnp.cjs
 .yarn
 .yarnrc.yml
+.vscode
+
