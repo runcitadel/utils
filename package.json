@@ -1,7 +1,7 @@
 {
     "name": "@runcitadel/utils",
     "packageManager": "yarn@3.0.2",
-    "version": "0.6.2-alpha.1",
+    "version": "0.6.2-alpha.3",
     "dependencies": {
         "@types/big.js": "^6.1.2",
         "@types/express": "^4.17.13",
