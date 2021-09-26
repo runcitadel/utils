@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.8.0
+
+-   feat: Add error handler for Koa
+
 ### 0.7.0
 
 -   Deprecate more express.js methods.

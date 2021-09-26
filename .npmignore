@@ -1,6 +1,5 @@
 src
 docs
-.yarn
 lib/*.test.js
-.vscode
-
+.*
+tsconfig.json
