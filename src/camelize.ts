@@ -1,5 +1,3 @@
-import type { Request, Response, NextFunction } from "express";
-
 /**
  * Converts a string to camelCase
  *
@@ -37,26 +35,4 @@ export function camelize(
         );
     }
     return "";
-}
-
-/**
- * Express middleware to convert the request body from snake_case to camelCase
- *
- * This only works if the body has been parsed before (for example by express.json())
- *
- * @param request Express request
- * @param _res Express response
- * @param next next function
- * @deprecated This was only used for express.js, we're now using Koa and generally only support camelCase
- */
-export function camelCaseMiddleware(
-    req: Request,
-    _res: Response,
-    next: NextFunction
-): void {
-    if (req && req.body) {
-        req.body = camelize(req.body);
-    }
-
-    next();
 }
