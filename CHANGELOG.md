@@ -2,6 +2,12 @@
 
 ## 0.x
 
+### 0.9.0 (Not released yet)
+
+-   feat: Add HTTP status codes util
+-   breaking: Remove most express.js utils
+-   feat: Add cors helpers
+
 ### 0.8.0
 
 -   feat: Add error handler for Koa
