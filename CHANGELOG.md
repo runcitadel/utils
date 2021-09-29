@@ -7,6 +7,7 @@
 -   feat: Add HTTP status codes util
 -   breaking: Remove most express.js utils
 -   feat: Add cors helpers
+-   breaking: Remove `fs` export, use `@runcitadel/fs` instead
 
 ### 0.8.0
 
