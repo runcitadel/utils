@@ -4,7 +4,6 @@
  * Based on {@link https://gist.github.com/scokmen/f813c904ef79022e84ab2409574d1b45}
  */
 export enum STATUS_CODES {
-
     /**
      * The server has received the request headers and the client should proceed to send the request body
      * (in the case of a request for which a body needs to be sent; for example, a POST request).
@@ -376,5 +375,5 @@ export enum STATUS_CODES {
      * Intended for use by intercepting proxies used to control access to the network (e.g., "captive portals" used
      * to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot).
      */
-    NETWORK_AUTHENTICATION_REQUIRED = 511
+    NETWORK_AUTHENTICATION_REQUIRED = 511,
 }

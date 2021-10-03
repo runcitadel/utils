@@ -2,7 +2,7 @@
 
 ## 0.x
 
-### 0.9.0 (Not released yet)
+### 0.9.0
 
 -   feat: Add HTTP status codes util
 -   breaking: Remove most express.js utils
