@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.9.1
+
+-   feat: Allow disabling CORS logic
+
 ### 0.9.0
 
 -   feat: Add HTTP status codes util
