@@ -4,6 +4,9 @@ import type { Context } from "koa";
 
 const corsOptions = {
     origin: (ctx: Context): string => {
+        if(process.env.UNSAFE_REMOVE_CORS_CHECK) {
+            return "*";
+        }
         const origin =
             ctx.headers.origin ?? ctx.request.headers.origin ?? ctx.origin;
         const allowList = [
