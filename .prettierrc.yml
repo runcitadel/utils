@@ -1,1 +1,5 @@
-tabWidth: 4
+bracketSpacing: false
+semi: true
+singleQuote: true
+tabWidth: 2
+trailingComma: all
