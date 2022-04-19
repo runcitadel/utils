@@ -2,6 +2,10 @@
 
 ## 0.x
 
+### 0.9.2
+
+- fix: update manager-api response types
+
 ### 0.9.1
 
 - feat: Allow disabling CORS logic
