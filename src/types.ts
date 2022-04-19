@@ -131,8 +131,13 @@ export type backupStatus = {
 };
 
 export type debugStatus = {
-  status: 'processing' | 'success';
-  debug: string;
+  status: 'requested' | 'processing' | 'success';
+  debug: string | null;
   /** The dmesg logs */
-  dmesg: string;
+  dmesg: string | null;
+};
+
+export type systemStatus = {
+  status: 'requested';
+  type: 'reboot' | 'shutdown';
 };
