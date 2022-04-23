@@ -1,6 +1,6 @@
-import validator from "validator";
+import validator from 'validator';
 
-import type { Context } from "koa";
+import type {Context} from 'koa';
 
 // Max length is listed here:
 // https://github.com/lightningnetwork/lnd/blob/fd1f6a7bc46b1e50ff3879b8bd3876d347dbb73d/channeldb/invoices.go#L84
@@ -14,11 +14,11 @@ const MIN_PASSWORD_LENGTH = 12;
  * @param ctx The koa context
  */
 export function isAlphanumeric(string: string, ctx: Context): void {
-    isDefined(string, ctx);
+  isDefined(string, ctx);
 
-    if (!validator.isAlphanumeric(string)) {
-        ctx.throw("Must include only alpha numeric characters.");
-    }
+  if (!validator.isAlphanumeric(string)) {
+    ctx.throw('Must include only alpha numeric characters.');
+  }
 }
 
 /**
@@ -28,11 +28,11 @@ export function isAlphanumeric(string: string, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isAlphanumericAndSpaces(string: string, ctx: Context): void {
-    isDefined(string, ctx);
+  isDefined(string, ctx);
 
-    if (!validator.matches(string, "^[a-zA-Z0-9\\s]*$")) {
-        ctx.throw("Must include only alpha numeric characters and spaces.");
-    }
+  if (!validator.matches(string, '^[a-zA-Z0-9\\s]*$')) {
+    ctx.throw('Must include only alpha numeric characters and spaces.');
+  }
 }
 
 /**
@@ -42,9 +42,9 @@ export function isAlphanumericAndSpaces(string: string, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isBoolean(value: unknown, ctx: Context): void {
-    if (value !== true && value !== false) {
-        ctx.throw("Must be true or false.");
-    }
+  if (value !== true && value !== false) {
+    ctx.throw('Must be true or false.');
+  }
 }
 
 /**
@@ -54,18 +54,18 @@ export function isBoolean(value: unknown, ctx: Context): void {
  * @param value The string or boolean to convert
  */
 export function toBoolean(value: unknown): boolean {
-    switch (value) {
-        case true:
-        case "true":
-        case 1:
-            return true;
-        case false:
-        case "false":
-        case 0:
-            return false;
-        default:
-            throw new TypeError("Unsupported value passed to toBoolean()");
-    }
+  switch (value) {
+    case true:
+    case 'true':
+    case 1:
+      return true;
+    case false:
+    case 'false':
+    case 0:
+      return false;
+    default:
+      throw new TypeError('Unsupported value passed to toBoolean()');
+  }
 }
 
 /**
@@ -75,14 +75,14 @@ export function toBoolean(value: unknown): boolean {
  * @param ctx The koa context
  */
 export function isBooleanLike(value: unknown, ctx: Context): void {
-    if (
-        value !== "true" &&
-        value !== "false" &&
-        value !== true &&
-        value !== false
-    ) {
-        ctx.throw("Must be true or false.");
-    }
+  if (
+    value !== 'true' &&
+    value !== 'false' &&
+    value !== true &&
+    value !== false
+  ) {
+    ctx.throw('Must be true or false.');
+  }
 }
 
 /**
@@ -92,9 +92,9 @@ export function isBooleanLike(value: unknown, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isDecimal(string: string, ctx: Context): void {
-    if (!validator.isDecimal(string)) {
-        ctx.throw("Must be decimal.");
-    }
+  if (!validator.isDecimal(string)) {
+    ctx.throw('Must be decimal.');
+  }
 }
 
 /**
@@ -104,9 +104,9 @@ export function isDecimal(string: string, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isDefined(value: unknown, ctx: Context): void {
-    if (value === undefined) {
-        ctx.throw("Must define variable.");
-    }
+  if (value === undefined) {
+    ctx.throw('Must define variable.');
+  }
 }
 
 /**
@@ -116,9 +116,9 @@ export function isDefined(value: unknown, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isMinPasswordLength(password: string, ctx: Context): void {
-    if (password.length < MIN_PASSWORD_LENGTH) {
-        ctx.throw("Must be " + MIN_PASSWORD_LENGTH + " or more characters.");
-    }
+  if (password.length < MIN_PASSWORD_LENGTH) {
+    ctx.throw('Must be ' + MIN_PASSWORD_LENGTH + ' or more characters.');
+  }
 }
 
 /**
@@ -128,9 +128,9 @@ export function isMinPasswordLength(password: string, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isPositiveInteger(amount: string | number, ctx: Context): void {
-    if (!validator.isInt(String(amount), { gt: 0 })) {
-        ctx.throw("Must be positive integer.");
-    }
+  if (!validator.isInt(String(amount), {gt: 0})) {
+    ctx.throw('Must be positive integer.');
+  }
 }
 
 /**
@@ -140,9 +140,9 @@ export function isPositiveInteger(amount: string | number, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isPositiveIntegerOrZero(amount: unknown, ctx: Context): void {
-    if (!validator.isInt(String(amount), { gt: -1 })) {
-        ctx.throw("Must be positive integer.");
-    }
+  if (!validator.isInt(String(amount), {gt: -1})) {
+    ctx.throw('Must be positive integer.');
+  }
 }
 
 /**
@@ -152,9 +152,9 @@ export function isPositiveIntegerOrZero(amount: unknown, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isString(value: unknown, ctx: Context): void {
-    if (typeof value !== "string") {
-        ctx.throw("Object must be of type string.");
-    }
+  if (typeof value !== 'string') {
+    ctx.throw('Object must be of type string.');
+  }
 }
 
 /**
@@ -164,7 +164,7 @@ export function isString(value: unknown, ctx: Context): void {
  * @param ctx The koa context
  */
 export function isValidMemoLength(string: string, ctx: Context): void {
-    if (Buffer.byteLength(string, "utf8") > MAX_MEMO_LENGTH) {
-        ctx.throw("Must be less than " + MAX_MEMO_LENGTH + " bytes.");
-    }
+  if (Buffer.byteLength(string, 'utf8') > MAX_MEMO_LENGTH) {
+    ctx.throw('Must be less than ' + MAX_MEMO_LENGTH + ' bytes.');
+  }
 }
